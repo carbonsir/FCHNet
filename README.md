@@ -1,19 +1,8 @@
-# FCHNet
-# FCHNet: Frequency-guided Camouflaged Object Detection Network
+# FCHNet: Frequency-aware Cross-domain Hierarchical Network for Camouflaged Object Detection
 
-## 📌 Introduction
+## 📌 Abstract
 
-FCHNet is a deep learning framework for **camouflaged object detection (COD)**, which leverages **frequency-domain information** and **hierarchical feature fusion** to enhance detection performance in challenging scenarios.
-
-The model integrates:
-
-* **Wavelet-based Frequency Reconstruction (WFR)**
-* **Cross-level Frequency Aggregation (CFA)**
-* **Boundary Feature Enhancement (BFE)**
-* **Boundary-guided Decoder (BGD)**
-
-to effectively capture both **spatial and frequency cues**.
-
+Camouflaged object detection (COD) remains challenging due to the high visual similarity between camouflaged objects and their surroundings, which often obscures subtle structures and weak boundaries. Recent COD methods incorporate frequency-domain priors to enhance structural representation. However, they typically rely on loosely coupled fusion, which fails to maintain consistent coordination between priors and evolving feature representations during hierarchical processing. To address this issue, we propose a Frequency-aware Cross-domain Hierarchical Network (FCHNet), which explicitly models the interaction between image-derived frequency priors and feature representations through structured alignment. At the core of the framework, a Cross-domain Frequency Alignment (CFA) module establishes bidirectional interaction and feedback mechanisms to ensure stable prior-feature coordination across domains. To support effective alignment, a Wavelet Feature Refinement (WFR) module performs structured multi-scale decomposition and band-specific enhancement to capture subtle structural and texture cues. In addition, a boundary-aware decoding strategy progressively incorporates boundary priors to improve boundary quality and object completeness. Extensive experiments show that FCHNet outperforms existing lightweight methods by up to 3.1% in F<sub>β</sub><sup>ω</sup> on COD10K, while using less than 5M parameters, and achieves performance comparable to heavyweight models with significantly lower computational cost.
 ---
 
 ## 🧠 Overall Architecture
@@ -21,10 +10,10 @@ to effectively capture both **spatial and frequency cues**.
 FCHNet consists of the following key components:
 
 * **Backbone**: EfficientNet-based feature extractor
-* **WFR Module**: Multi-scale wavelet reconstruction for feature enhancement
-* **CFA Module**: Cross-scale frequency feature aggregation
-* **BFE Module**: Boundary feature enhancement
-* **BGD Module**: Progressive decoding with boundary guidance
+* **WFR Module**: Multi-scale wavelet feature refinement
+* **CFA Module**: Cross-domain frequency alignment
+* **BFE Module**: Boundary feature extraction
+* **BGD Module**: Boundary-guided decoder
 
 ---
 
@@ -34,7 +23,7 @@ FCHNet consists of the following key components:
 FCHNet/
 ├── Model/
 │   ├── FCHNet.py          # Main model
-│   ├── WFFMA.py           # CFA module (renamed from WFFM)
+│   ├── CFA.py             # CFA module 
 │   ├── WFR related code   # Wavelet reconstruction modules
 │   ├── BFE / BGD modules  # Boundary modules
 │   └── backbone files     # EfficientNet etc.
@@ -133,41 +122,6 @@ Metrics include:
 * E-measure
 * Weighted F-measure
 * MAE
-
----
-
-## 🧩 Key Modules
-
-### 🔹 WFR (Wavelet Feature Reconstruction)
-
-* Decomposes features into low/high frequency
-* Reconstructs enhanced representations via IDWT
-
-### 🔹 CFA (Cross-level Frequency Aggregation)
-
-* Aggregates multi-scale frequency features
-* Improves semantic consistency
-
-### 🔹 BFE (Boundary Feature Enhancement)
-
-* Extracts fine-grained edge information
-
-### 🔹 BGD (Boundary-guided Decoder)
-
-* Progressive decoding with boundary supervision
-
----
-
-## 📌 Notes
-
-* The project has been **cleaned and simplified**
-* Unused modules and experimental files are removed
-* Naming has been unified:
-
-  * WFNet → FCHNet
-  * WFFM → CFA
-  * edgeconv → BFE
-  * deconv → BGD
 
 ---
 
