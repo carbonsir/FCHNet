@@ -1,8 +1,9 @@
 # FCHNet: Frequency-aware Cross-domain Hierarchical Network for Camouflaged Object Detection
 
 ## 📌 Abstract
-
+<p align="justify">
 Camouflaged object detection (COD) remains challenging due to the high visual similarity between camouflaged objects and their surroundings, which often obscures subtle structures and weak boundaries. Recent COD methods incorporate frequency-domain priors to enhance structural representation. However, they typically rely on loosely coupled fusion, which fails to maintain consistent coordination between priors and evolving feature representations during hierarchical processing. To address this issue, we propose a Frequency-aware Cross-domain Hierarchical Network (FCHNet), which explicitly models the interaction between image-derived frequency priors and feature representations through structured alignment. At the core of the framework, a Cross-domain Frequency Alignment (CFA) module establishes bidirectional interaction and feedback mechanisms to ensure stable prior-feature coordination across domains. To support effective alignment, a Wavelet Feature Refinement (WFR) module performs structured multi-scale decomposition and band-specific enhancement to capture subtle structural and texture cues. In addition, a boundary-aware decoding strategy progressively incorporates boundary priors to improve boundary quality and object completeness. Extensive experiments show that FCHNet outperforms existing lightweight methods by up to 3.1% in F<sub>β</sub><sup>ω</sup> on COD10K, while using less than 5M parameters, and achieves performance comparable to heavyweight models with significantly lower computational cost.
+</p>
 ---
 
 ## 🧠 Overall Architecture
@@ -66,7 +67,7 @@ The model is designed for camouflaged object detection benchmarks:
 * COD10K
 * CHAMELEON
 * NC4K
-
+The training and testing datasets can be downloaded from https://github.com/GewelsJI/SINet-V2.
 Prepare dataset structure like:
 
 ```text
@@ -107,9 +108,11 @@ Predictions will be saved in:
 ```text
 prediction_maps/
 ```
+| Prediction Maps | [Baidu Netdisk](https://pan.baidu.com/s/1DA3Sat-NnsNxFfN59cVLIw?pwd=digs) | digs |
 
 ---
-
+通过网盘分享的文件：FCHNET.zip
+链接:  提取码: 
 ## 📈 Evaluation
 
 ```bash
@@ -143,4 +146,4 @@ Thanks to prior works on:
 
 ## 📬 Contact
 
-If you have any questions, feel free to open an issue.
+If you have any questions, please feel free to contact me via email at carbonsir@126.com.
