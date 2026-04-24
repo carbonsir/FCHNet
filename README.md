@@ -1,4 +1,6 @@
 # FCHNet: Frequency-aware Cross-domain Hierarchical Network for Camouflaged Object Detection
+> 🚧 **Note**  
+> The code and pretrained models will be released after the paper is accepted for publication.
 
 ## 📌 Abstract
 <p align="justify">
