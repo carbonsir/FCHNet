@@ -1,8 +1,8 @@
 # Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
 
 [![Paper](https://img.shields.io/badge/Paper-The%20Visual%20Computer-blue)](#)
-[![DOI](https://zenodo.org/badge/1219664560.svg)](https://doi.org/10.5281/zenodo.20047495)(#)
-[![License](https://zenodo.org/badge/1219664560.svg)](#license)(#)
+[![DOI](https://zenodo.org/badge/1219664560.svg)](https://doi.org/10.5281/zenodo.20047495)
+[![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
 ## 📌 Abstract
 
