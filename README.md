@@ -330,12 +330,9 @@ The following table reports the performance of FCHNet on four COD benchmark data
 
 | Dataset | S-measure ↑ | E-measure ↑ | Weighted F-measure ↑ | MAE ↓ |
 |---|---:|---:|---:|---:|
-| CAMO | TODO | TODO | TODO | TODO |
-| COD10K | TODO | TODO | TODO | TODO |
-| CHAMELEON | TODO | TODO | TODO | TODO |
-| NC4K | TODO | TODO | TODO | TODO |
-
-Please replace `TODO` with the official results reported in the manuscript.
+| CAMO | 0.840 | 0.898  | 0.781  | 0.059  |
+| COD10K | 0.835 | 0.910  | 0.727 | 0.029 |
+| NC4K | 0.862 | 0.916 | 0.802  | 0.041  |
 
 --
 
