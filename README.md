@@ -252,7 +252,7 @@ Recommended training settings:
 Input size: 384 × 384
 Batch size: 32
 Learning rate: 2.6e-4
-Epochs: 100
+Epochs: 200
 Optimizer: Adam
 ```
 
