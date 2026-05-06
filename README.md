@@ -190,7 +190,6 @@ FCHNet is trained and evaluated on commonly used camouflaged object detection be
 
 - CAMO
 - COD10K
-- CHAMELEON
 - NC4K
 
 The training and testing datasets can be downloaded from publicly available COD dataset repositories, such as SINet-V2:
@@ -213,9 +212,6 @@ dataset/
     │   ├── Image/
     │   └── GT/
     ├── COD10K/
-    │   ├── Image/
-    │   └── GT/
-    ├── CHAMELEON/
     │   ├── Image/
     │   └── GT/
     └── NC4K/
@@ -292,7 +288,6 @@ Expected output structure:
 prediction_maps/
 ├── CAMO/
 ├── COD10K/
-├── CHAMELEON/
 └── NC4K/
 ```
 
@@ -402,10 +397,10 @@ If you find this work useful for your research, please cite our related manuscri
 ```bibtex
 @article{fchnet2026,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={TODO and TODO and TODO},
+  author={Tan Song and Jinbao LI and Yahong Guo},
   journal={The Visual Computer},
   year={2026},
-  note={Under review}
+  note={Submission}
 }
 ```
 
@@ -429,7 +424,6 @@ We sincerely thank the authors of previous camouflaged object detection works an
 
 - CAMO
 - COD10K
-- CHAMELEON
 - NC4K
 - SINet
 - SINet-V2
