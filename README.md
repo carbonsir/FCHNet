@@ -29,7 +29,7 @@ To improve transparency and reproducibility, we provide source code, trained mod
 | Resource | Link | Extraction Code |
 |---|---|---|
 | FCHNet prediction maps | https://pan.baidu.com/s/1esOes8En-lfgAugIYQvs4A?pwd=wpe7 | wpe7 |
-| FCHNet trained model | `https://pan.baidu.com/s/1Iz02YaItxvPlpAuICyeblg?pwd=e4x4` | e4x4 |
+| FCHNet trained model | https://pan.baidu.com/s/1Iz02YaItxvPlpAuICyeblg?pwd=e4x4 | e4x4 |
 
 ---
 
