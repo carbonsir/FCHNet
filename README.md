@@ -6,11 +6,7 @@
 
 ## 📌 Abstract
 
-Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often use loose fusion of frequency priors and spatial features, leading to unstable representation.
-
-This work presents a **Frequency-aware Cross-domain Hierarchical Network (FCHNet)** for efficient camouflaged object detection. The proposed model integrates a **Cross-domain Frequency Alignment (CFA)** module and **Wavelet Feature Refinement (WFR)** module to stabilize spatial-frequency coordination. A boundary-aware decoder further refines object contours.
-
-Experiments on **CAMO**, **COD10K**, **CHAMELEON**, and **NC4K** demonstrate that FCHNet achieves a favorable balance between efficiency and accuracy. Compared with existing lightweight COD models, FCHNet improves the weighted F-measure while maintaining fewer than **5M parameters**.
+Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often use loose fusion of frequency priors and spatial features, leading to unstable representation. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates a Cross-domain Frequency Alignment module and Wavelet Feature Refinement to stabilize spatial-frequency coordination. A boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show FCHNet outperforms lightweight models by 3.1% in weighted F-measure with under 5M parameters, achieving efficiency and accuracy balance. 
 
 ---
 
@@ -34,8 +30,6 @@ To improve transparency and reproducibility, we provide source code, trained mod
 |---|---|---|
 | FCHNet prediction maps | https://pan.baidu.com/s/1esOes8En-lfgAugIYQvs4A?pwd=wpe7 | wpe7 |
 | FCHNet trained model | `https://pan.baidu.com/s/TODO` | TODO |
-
-> Note: Zenodo DOI is recommended for long-term access and citation. The DOI will be updated after the official release is archived.
 
 ---
 
