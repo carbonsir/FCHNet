@@ -356,7 +356,95 @@ The following table reports the performance of FCHNet on four COD benchmark data
 Please replace `TODO` with the official results reported in the manuscript.
 
 ---
+--
 
+## 🖼️ Experimental Visualization and Analysis
+
+To provide a more comprehensive understanding of the proposed FCHNet, we include qualitative comparisons, ablation studies, visualization results, and failure cases.
+
+### Qualitative Comparison
+
+The following figure shows qualitative comparison results between FCHNet and other representative camouflaged object detection methods.
+
+<p align="center">
+  <img src="figures/Fig7-Qtt.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 7.</b> Qualitative comparison of FCHNet with other COD methods.
+</p>
+
+---
+
+### Ablation Study
+
+The following figure presents the ablation study of the main components in FCHNet. The results demonstrate the effectiveness of the proposed modules.
+
+<p align="center">
+  <img src="figures/Fig8-abla.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 8.</b> Ablation analysis of the proposed components.
+</p>
+
+---
+
+### Feature Visualization
+
+The following figure visualizes the feature activation and heatmap responses of FCHNet. The visualization results show that FCHNet can focus more accurately on camouflaged objects and suppress background interference.
+
+<p align="center">
+  <img src="figures/Fig9-overviewheatmap.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 9.</b> Overview of heatmap visualization results.
+</p>
+
+---
+
+### CFA Module Analysis
+
+The following figure illustrates the ablation results of the Cross-domain Frequency Alignment module. The comparison demonstrates that CFA contributes to better spatial-frequency coordination.
+
+<p align="center">
+  <img src="figures/Fig10-CFAAbla.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 10.</b> Ablation analysis of the Cross-domain Frequency Alignment module.
+</p>
+
+---
+
+### WFR Module Analysis
+
+The following figure shows the analysis of the Wavelet Feature Refinement module. The results indicate that wavelet-based refinement helps preserve structural and boundary details.
+
+<p align="center">
+  <img src="figures/Fig11-AWFR.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 11.</b> Analysis of the Wavelet Feature Refinement module.
+</p>
+
+---
+
+### CFA Visualization Analysis
+
+The following figure further analyzes the effect of the Cross-domain Frequency Alignment module through visual comparison.
+
+<p align="center">
+  <img src="figures/Fig12-ACFA.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 12.</b> Visualization analysis of the Cross-domain Frequency Alignment module.
+</p>
+
+---
 ## ⚡ Model Complexity
 
 FCHNet is designed as a lightweight camouflaged object detection model.
