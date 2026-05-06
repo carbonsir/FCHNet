@@ -28,21 +28,11 @@ If you use this code, trained weights, prediction maps, or experimental results 
 
 ## 🌐 Permanent Resources
 
-To improve transparency and reproducibility, we provide source code, trained models, prediction maps, and evaluation results.
-
-| Resource | Link |
-|---|---|
-| GitHub Repository | `https://github.com/TODO/FCHNet` |
-| Zenodo DOI | `https://doi.org/TODO` |
-| Trained Weights | TODO |
-| Prediction Maps | TODO |
-| Evaluation Results | TODO |
-
-Baidu Netdisk resources:
+To improve transparency and reproducibility, we provide source code, trained models, prediction maps.
 
 | Resource | Link | Extraction Code |
 |---|---|---|
-| FCHNet prediction maps | `https://pan.baidu.com/s/TODO` | TODO |
+| FCHNet prediction maps | https://pan.baidu.com/s/1esOes8En-lfgAugIYQvs4A?pwd=wpe7 | wpe7 |
 | FCHNet trained model | `https://pan.baidu.com/s/TODO` | TODO |
 
 > Note: Zenodo DOI is recommended for long-term access and citation. The DOI will be updated after the official release is archived.
@@ -265,12 +255,11 @@ python train.py
 Recommended training settings:
 
 ```text
-Input size: 352 × 352
-Batch size: 16
-Learning rate: 1e-4
+Input size: 384 × 384
+Batch size: 32
+Learning rate: 2.6e-4
 Epochs: 100
 Optimizer: Adam
-Random seed: 2026
 ```
 
 The trained checkpoints will be saved in:
@@ -329,17 +318,6 @@ The evaluation metrics include:
 - E-measure
 - Weighted F-measure
 - MAE
-
-Example evaluation format:
-
-```text
-Dataset: CAMO
-S-measure: TODO
-E-measure: TODO
-Weighted F-measure: TODO
-MAE: TODO
-```
-
 ---
 
 ## 🏆 Quantitative Results
@@ -444,16 +422,6 @@ The following figure further analyzes the effect of the Cross-domain Frequency A
   <b>Figure 12.</b> Visualization analysis of the Cross-domain Frequency Alignment module.
 </p>
 
----
-## ⚡ Model Complexity
-
-FCHNet is designed as a lightweight camouflaged object detection model.
-
-| Model | Parameters | FLOPs | Input Size |
-|---|---:|---:|---:|
-| FCHNet | < 5M | TODO G | 352 × 352 |
-
----
 
 ## 🔁 Reproducibility Notes
 
@@ -466,37 +434,6 @@ To reproduce the reported results, please follow these steps:
 5. Train FCHNet using `train.py`, or download the released trained model.
 6. Run `inference.py` to generate prediction maps.
 7. Run `evaluate.py` to calculate quantitative metrics.
-
-Recommended reproducibility settings:
-
-```text
-Random seed: 2026
-Input size: 352 × 352
-Batch size: 16
-Learning rate: 1e-4
-Epochs: 100
-No test-time augmentation
-```
-
-All reported results are obtained using the released checkpoint without test-time augmentation unless otherwise specified.
-
----
-
-## 🧾 Pretrained Model and Prediction Maps
-
-We provide pretrained weights and prediction maps to help readers reproduce and verify the reported results.
-
-| Resource | Link | Extraction Code |
-|---|---|---|
-| Pretrained FCHNet model | TODO | TODO |
-| Prediction maps on CAMO | TODO | TODO |
-| Prediction maps on COD10K | TODO | TODO |
-| Prediction maps on CHAMELEON | TODO | TODO |
-| Prediction maps on NC4K | TODO | TODO |
-
-The released prediction maps can be directly used for evaluation with `evaluate.py`.
-
----
 
 ## 📖 Citation
 
