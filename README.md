@@ -1,11 +1,11 @@
 # Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
-[![Manuscript](https://img.shields.io/badge/Manuscript-Submitted%20to%20The%20Visual%20Computer-blue)]
+[![Manuscript](https://img.shields.io/badge/Manuscript-Submitted%20to%20The%20Visual%20Computer-blue)](#paper-and-code-relationship)
 [![DOI](https://zenodo.org/badge/1219664560.svg)](https://doi.org/10.5281/zenodo.20047495)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
 ## 📌 Abstract
 <p align="justify">
-Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy--efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models. 
+Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy-efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models. 
 </p>
 ---
 
