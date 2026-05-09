@@ -1,12 +1,11 @@
 # Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
-
-[![Paper](https://img.shields.io/badge/Paper-The%20Visual%20Computer-blue)](#)
+[![Manuscript](https://img.shields.io/badge/Manuscript-Submitted%20to%20The%20Visual%20Computer-blue)](#)
 [![DOI](https://zenodo.org/badge/1219664560.svg)](https://doi.org/10.5281/zenodo.20047495)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
 ## 📌 Abstract
 
-Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often use loose fusion of frequency priors and spatial features, leading to unstable representation. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates a Cross-domain Frequency Alignment module and Wavelet Feature Refinement to stabilize spatial-frequency coordination. A boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show FCHNet outperforms lightweight models by 3.1% in weighted F-measure with under 5M parameters, achieving efficiency and accuracy balance. 
+Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a \textbf{F}requency-aware \textbf{C}ross-domain \textbf{H}ierarchical \textbf{N}etwork (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy--efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models. 
 
 ---
 
@@ -148,8 +147,8 @@ The experiments were conducted under the following environment:
 ```text
 Ubuntu 20.04
 Python 3.8
-PyTorch 1.10+
-CUDA 11.3
+PyTorch 2.5.1
+CUDA 12.1
 torchvision
 numpy
 opencv-python
@@ -315,13 +314,13 @@ The evaluation metrics include:
 </p>
 
 <p align="center">
-  <b>Figure 7.</b> Qualitative comparison of FCHNet with other COD methods.
+  <b>Figure 2.</b> Overall pipeline of FCHNet.
 </p>
 
 
 ## 🏆 Quantitative Results
 
-The following table reports the performance of FCHNet on four COD benchmark datasets.
+The following table reports the performance of FCHNet on three COD benchmark datasets.
 
 | Dataset | S-measure ↑ | E-measure ↑ | Weighted F-measure ↑ | MAE ↓ |
 |---|---:|---:|---:|---:|
@@ -397,10 +396,10 @@ If you find this work useful for your research, please cite our related manuscri
 ```bibtex
 @article{fchnet2026,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={Tan Song and Jinbao LI and Yahong Guo},
+  author={Tan, Song and Jinbao, Li and Yahong, Guo},
   journal={The Visual Computer},
   year={2026},
-  note={Submission}
+  note={Manuscript submitted to The Visual Computer}
 }
 ```
 
