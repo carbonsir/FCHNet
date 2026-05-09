@@ -1,12 +1,15 @@
 # Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
+
 [![Manuscript](https://img.shields.io/badge/Manuscript-Submitted%20to%20The%20Visual%20Computer-blue)](#paper-and-code-relationship)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20047495.svg)](https://doi.org/10.5281/zenodo.20047495)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
 ## 📌 Abstract
+
 <p align="justify">
 Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy-efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models. 
 </p>
+
 ---
 
 ## 🔗 Paper and Code Relationship
@@ -23,7 +26,7 @@ If you use this code, trained weights, prediction maps, or experimental results 
 
 ## 🌐 Permanent Resources
 
-To improve transparency and reproducibility, we provide source code, trained models, prediction maps.
+To improve transparency and reproducibility, this repository provides source code, trained models, and prediction maps.
 
 | Resource | Link | Extraction Code |
 |---|---|---|
@@ -169,7 +172,7 @@ pip install -r requirements.txt
 Example `requirements.txt`:
 
 ```text
-torch>=1.10.0
+torch>=2.0.0
 torchvision
 numpy
 opencv-python
@@ -320,7 +323,7 @@ The evaluation metrics include:
 
 ## 🏆 Quantitative Results
 
-The following table reports the performance of FCHNet on three COD benchmark datasets.
+The following table reports the performance of FCHNet-S on three COD benchmark datasets.
 
 | Dataset | S-measure ↑ | E-measure ↑ | Weighted F-measure ↑ | MAE ↓ |
 |---|---:|---:|---:|---:|
@@ -328,7 +331,7 @@ The following table reports the performance of FCHNet on three COD benchmark dat
 | COD10K | 0.835 | 0.910  | 0.727 | 0.029 |
 | NC4K | 0.862 | 0.916 | 0.802  | 0.041  |
 
---
+---
 
 ## 🖼️ Experimental Visualization and Analysis
 
@@ -394,9 +397,9 @@ To reproduce the reported results, please follow these steps:
 If you find this work useful for your research, please cite our related manuscript:
 
 ```bibtex
-@article{fchnet2026,
+@misc{fchnet2026,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={Tan, Song and Jinbao, Li and Yahong, Guo},
+  author={Song Tan and Li Jinbao and Guo Yahong},
   journal={The Visual Computer},
   year={2026},
   note={Manuscript submitted to The Visual Computer}
