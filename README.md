@@ -25,8 +25,8 @@ This repository provides the full source code of the proposed FCHNet algorithm, 
 
 - GitHub repository: https://github.com/carbonsir/FCHNet
 - Permanent archived DOI: https://doi.org/10.5281/zenodo.20047495
-- Trained weights: [Zenodo/GitHub Release link]
-- Prediction maps: [Zenodo/GitHub Release link]
+- Trained weights: [https://drive.google.com/file/d/1wR6ukLUXvJ8hfVT5eq1mjOUVM7dLZSuv/view?usp=drive_link]
+- Prediction maps: [https://drive.google.com/file/d/1BsBFn1SP_b7-lmGgtcYH0jMr402GDekE/view?usp=drive_link]
 - Dataset preparation instructions: datasets/README.md
 
 The raw images of CAMO, COD10K, and NC4K are not redistributed due to dataset license restrictions. We provide official dataset links, preprocessing instructions, edge-map preparation details, prediction maps, and evaluation scripts to facilitate reproducible research.
