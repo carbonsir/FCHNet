@@ -4,6 +4,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20047495.svg)](https://doi.org/10.5281/zenodo.20047495)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
+## Permanent DOI
+
+The archived version of this repository is available at:
+
+**DOI:** https://doi.org/10.5281/zenodo.20047495  
+**Zenodo record:** https://zenodo.org/records/20047495
+
 ## 📌 Abstract
 
 <p align="justify">
