@@ -1,14 +1,38 @@
-# Dataset Preparation
+## 📊 Dataset Preparation
 
-FCHNet is trained and evaluated on CAMO, COD10K, and NC4K.
+FCHNet is trained and evaluated on commonly used camouflaged object detection benchmarks:
 
-## Official Dataset Sources
+- CAMO
+- COD10K
+- NC4K
 
-- CAMO: [official/public link]
-- COD10K: [official/public link]
-- NC4K: [official/public link]
-- Alternative organized COD datasets can be found from SINet-V2.
+The training and testing datasets can be downloaded from publicly available COD dataset repositories, such as SINet-V2:
 
-## Data License Notice
+```text
+https://github.com/GewelsJI/SINet-V2
+```
 
-Due to dataset license restrictions, we do not redistribute the raw images directly. Instead, we provide official dataset links, organization instructions, preprocessing details, trained weights, prediction maps, and evaluation scripts to reproduce the reported results.
+Please organize the dataset as follows:
+
+```text
+dataset/
+├── TrainDataset/
+│   ├── Image/
+│   ├── GT/
+│   └── Edge/
+│
+└── TestDataset/
+    ├── CAMO/
+    │   ├── Image/
+    │   └── GT/
+    ├── COD10K/
+    │   ├── Image/
+    │   └── GT/
+    └── NC4K/
+        ├── Image/
+        └── GT/
+```
+
+The `Edge/` folder contains edge maps generated from ground-truth masks. These edge maps are used for boundary supervision during training.
+
+Please update the dataset paths in the configuration file or training script before running the code
