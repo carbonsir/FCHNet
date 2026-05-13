@@ -33,6 +33,5 @@ dataset/
         └── GT/
 ```
 
-The `Edge/` folder contains edge maps generated from ground-truth masks. These edge maps are used for boundary supervision during training.
-
+The `Edge/` folder contains edge maps generated from ground-truth masks. download:  https://drive.google.com/file/d/1oxqxjQbDOcwREq53q3cU4zkdfZ6azKPK/view?usp=drive_link
 Please update the dataset paths in the configuration file or training script before running the code
