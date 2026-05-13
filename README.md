@@ -19,6 +19,18 @@ Camouflaged object detection (COD) faces challenges in preserving subtle structu
 
 ---
 
+This repository provides the full source code of the proposed FCHNet algorithm, including the model implementation, training script, inference script, evaluation script, requirements, key algorithm modules, trained weights, and prediction maps.
+
+- GitHub repository: https://github.com/carbonsir/FCHNet
+- Permanent archived DOI: https://doi.org/10.5281/zenodo.20047495
+- Trained weights: [Zenodo/GitHub Release link]
+- Prediction maps: [Zenodo/GitHub Release link]
+- Dataset preparation instructions: datasets/README.md
+
+The raw images of CAMO, COD10K, and NC4K are not redistributed due to dataset license restrictions. We provide official dataset links, preprocessing instructions, edge-map preparation details, prediction maps, and evaluation scripts to facilitate reproducible research.
+
+---
+
 ## 🔗 Paper and Code Relationship
 
 This repository contains the official implementation of the manuscript:
@@ -30,6 +42,7 @@ This code is directly related to a manuscript submitted to **The Visual Computer
 If you use this code, trained weights, prediction maps, or experimental results in your research, please cite the related manuscript. The official citation information will be updated after the paper is accepted or published.
 
 ---
+
 
 ## 🌐 Permanent Resources
 
@@ -362,12 +375,12 @@ To reproduce the reported results, please follow these steps:
 If you find this work useful for your research, please cite our related manuscript:
 
 ```bibtex
-@misc{fchnet2026,
+@article{tan2026fchnet,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={Song Tan and Li Jinbao and Guo Yahong},
+  author={Song, Tan and Li, Jinbao and Guo, Yahong},
   journal={The Visual Computer},
   year={2026},
-  note={Manuscript submitted to The Visual Computer}
+  note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
 }
 ```
 
