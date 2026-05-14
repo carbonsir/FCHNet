@@ -22,24 +22,27 @@ If you use the code or models from this repository in your research, please cite
   year={2026},
   note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
 }
+```
+
+---
 
 ## 📌 Abstract
 
 <p align="justify">
-Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy-efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models. 
+Camouflaged object detection (COD) faces challenges in preserving subtle structural cues due to weak boundaries and high background similarity. Existing methods often rely on loosely coupled fusion between frequency priors and spatial features, leading to unstable prior-feature interaction. This work presents a Frequency-aware Cross-domain Hierarchical Network (FCHNet) for efficient COD. The model integrates Wavelet Feature Refinement and Cross-domain Frequency Alignment to stabilize prior-feature coordination, while a boundary-aware decoder further refines object contours. Experiments on CAMO, COD10K, and NC4K show that FCHNet consistently outperforms representative lightweight COD models in weighted F-measure. In particular, FCHNet-S achieves a favorable accuracy-efficiency trade-off with 4.69M parameters, while FCHNet-L remains competitive with heavyweight models.
 </p>
 
 ---
 
-This repository provides the full source code of the proposed FCHNet algorithm, including the model implementation, training script, inference script, evaluation script, requirements, key algorithm modules, trained weights, and prediction maps.
+This repository provides the full source code of the proposed FCHNet algorithm, including the model implementation, training script, inference script, evaluation script, dependency requirements, key algorithm modules, trained weights, and prediction maps.
 
-- GitHub repository: https://github.com/carbonsir/FCHNet
-- Permanent archived DOI: https://doi.org/10.5281/zenodo.20047495
-- Trained weights: [https://drive.google.com/file/d/1wR6ukLUXvJ8hfVT5eq1mjOUVM7dLZSuv/view?usp=drive_link]
-- Prediction maps: [https://drive.google.com/file/d/1BsBFn1SP_b7-lmGgtcYH0jMr402GDekE/view?usp=drive_link]
-- Dataset preparation instructions: datasets/README.md
+- **GitHub repository:** https://github.com/carbonsir/FCHNet
+- **Permanent archived DOI:** https://doi.org/10.5281/zenodo.20047495
+- **Trained weights:** [Google Drive](https://drive.google.com/file/d/1wR6ukLUXvJ8hfVT5eq1mjOUVM7dLZSuv/view?usp=drive_link)
+- **Prediction maps:** [Google Drive](https://drive.google.com/file/d/1BsBFn1SP_b7-lmGgtcYH0jMr402GDekE/view?usp=drive_link)
+- **Dataset preparation instructions:** [`dataset/README.md`](dataset/README.md)
 
-The raw images of CAMO, COD10K, and NC4K are not redistributed due to dataset license restrictions. We provide official dataset links, preprocessing instructions, edge-map preparation details, prediction maps, and evaluation scripts to facilitate reproducible research.
+The raw images of CAMO, COD10K, and NC4K are not redistributed due to dataset license restrictions. We provide dataset organization instructions, preprocessing instructions, edge-map preparation details, trained weights, prediction maps, and evaluation scripts to facilitate reproducible research.
 
 ---
 
@@ -55,15 +58,22 @@ If you use this code, trained weights, prediction maps, or experimental results 
 
 ---
 
-
 ## 🌐 Permanent Resources
 
-To improve transparency and reproducibility, this repository provides source code, trained models, and prediction maps.
+To improve transparency and reproducibility, this repository provides source code, trained models, prediction maps, and dataset preparation instructions.
 
 | Resource | Link | Extraction Code |
 |---|---|---|
 | FCHNet prediction maps | https://pan.baidu.com/s/1esOes8En-lfgAugIYQvs4A?pwd=wpe7 | wpe7 |
 | FCHNet trained weights | https://pan.baidu.com/s/1Iz02YaItxvPlpAuICyeblg?pwd=e4x4 | e4x4 |
+| Archived repository DOI | https://doi.org/10.5281/zenodo.20047495 | - |
+
+Google Drive mirrors are also provided:
+
+| Resource | Link |
+|---|---|
+| FCHNet trained weights | [Google Drive](https://drive.google.com/file/d/1wR6ukLUXvJ8hfVT5eq1mjOUVM7dLZSuv/view?usp=drive_link) |
+| FCHNet prediction maps | [Google Drive](https://drive.google.com/file/d/1BsBFn1SP_b7-lmGgtcYH0jMr402GDekE/view?usp=drive_link) |
 
 ---
 
@@ -160,6 +170,9 @@ FCHNet/
 │   ├── WHAtt.py           # High-frequency wavelet attention module
 │   └── WLAtt.py           # Low-frequency wavelet attention module
 │
+├── dataset/
+│   └── README.md          # Dataset preparation instructions
+│
 ├── utils/
 │   ├── dataloader_freq.py
 │   ├── data_augmentation.py
@@ -169,6 +182,7 @@ FCHNet/
 ├── train.py
 ├── inference.py
 ├── evaluate.py
+├── config.py
 ├── requirements.txt
 └── README.md
 ```
@@ -216,6 +230,47 @@ matplotlib
 
 Please make sure that the installed PyTorch version is compatible with your CUDA version.
 
+---
+
+## 📁 Dataset Preparation
+
+FCHNet is trained and evaluated on three public COD benchmark datasets:
+
+- CAMO
+- COD10K
+- NC4K
+
+Due to dataset license restrictions, the raw images are not redistributed in this repository. Please download the original datasets from their official sources or publicly available benchmark collections.
+
+Please refer to the dataset preparation file for detailed instructions:
+
+```text
+dataset/README.md
+```
+
+Expected dataset structure:
+
+```text
+dataset/
+├── TrainDataset/
+│   ├── Imgs/
+│   ├── GT/
+│   └── Edge/
+└── TestDataset/
+    ├── CAMO/
+    │   ├── Imgs/
+    │   └── GT/
+    ├── COD10K/
+    │   ├── Imgs/
+    │   └── GT/
+    └── NC4K/
+        ├── Imgs/
+        └── GT/
+```
+
+The `Edge/` folder contains edge or boundary maps generated from the ground-truth masks for boundary supervision.
+
+---
 
 ## 🚀 Training
 
@@ -299,7 +354,9 @@ The evaluation metrics include:
 - E-measure
 - Weighted F-measure
 - MAE
+
 ---
+
 ## 🏆 Overview
 
 <p align="center">
@@ -310,6 +367,7 @@ The evaluation metrics include:
   <b>Figure 2.</b> Overall pipeline of FCHNet.
 </p>
 
+---
 
 ## 🏆 Quantitative Results
 
@@ -317,9 +375,9 @@ The following table reports the performance of FCHNet-S on three COD benchmark d
 
 | Dataset | S-measure ↑ | E-measure ↑ | Weighted F-measure ↑ | MAE ↓ |
 |---|---:|---:|---:|---:|
-| CAMO | 0.840 | 0.898  | 0.781  | 0.059  |
-| COD10K | 0.835 | 0.910  | 0.727 | 0.029 |
-| NC4K | 0.862 | 0.916 | 0.802  | 0.041  |
+| CAMO | 0.840 | 0.898 | 0.781 | 0.059 |
+| COD10K | 0.835 | 0.910 | 0.727 | 0.029 |
+| NC4K | 0.862 | 0.916 | 0.802 | 0.041 |
 
 ---
 
@@ -369,7 +427,6 @@ The following figure visualizes the feature activation and heatmap responses of 
 
 ---
 
-
 ## 🔁 Reproducibility Notes
 
 To reproduce the reported results, please follow these steps:
@@ -382,6 +439,14 @@ To reproduce the reported results, please follow these steps:
 6. Run `inference.py` to generate prediction maps.
 7. Run `evaluate.py` to calculate quantitative metrics.
 
+For dataset organization and edge-map preparation, please refer to:
+
+```text
+dataset/README.md
+```
+
+---
+
 ## 📖 Citation
 
 If you find this work useful for your research, please cite our related manuscript:
@@ -389,7 +454,7 @@ If you find this work useful for your research, please cite our related manuscri
 ```bibtex
 @article{tan2026fchnet,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={Song, Tan and Li, Jinbao and Guo, Yahong},
+  author={Tan, Song and Li, Jinbao and Guo, Yahong},
   journal={The Visual Computer},
   year={2026},
   note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
