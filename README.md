@@ -4,13 +4,15 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20047495.svg)](https://doi.org/10.5281/zenodo.20047495)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
+---
+
 ## 📚 Recommended Citation
 
 If you use the code or models from this repository in your research, please cite the following manuscript:
 
 **Article Title:** Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
 
-**Journal:** The Visual Computer
+**Journal:** **The Visual Computer**
 
 **BibTeX entry:**
 ```bibtex
@@ -21,6 +23,8 @@ If you use the code or models from this repository in your research, please cite
   year={2026},
   note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
 }
+
+---
 
 **This code is directly related to a manuscript submitted to The Visual Computer.****
 
