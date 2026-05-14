@@ -454,7 +454,7 @@ If you find this work useful for your research, please cite our related manuscri
 ```bibtex
 @article{tan2026fchnet,
   title={Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection},
-  author={Tan, Song and Li, Jinbao and Guo, Yahong},
+  author={Tan, Song and Jinbao, Li and Yahong, Guo},
   journal={The Visual Computer},
   year={2026},
   note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
