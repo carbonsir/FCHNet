@@ -24,17 +24,6 @@ If you use the code or models from this repository in your research, please cite
   note={Manuscript submitted to The Visual Computer. Code available at https://doi.org/10.5281/zenodo.20047495}
 }
 
----
-
-**This code is directly related to a manuscript submitted to The Visual Computer.****
-
-## Permanent DOI
-
-The archived version of this repository is available at:
-
-**DOI:** https://doi.org/10.5281/zenodo.20047495  
-**Zenodo record:** https://zenodo.org/records/20047495
-
 ## 📌 Abstract
 
 <p align="justify">
