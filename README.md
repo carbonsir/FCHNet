@@ -10,7 +10,7 @@ If you use the code or models from this repository in your research, please cite
 
 **Article Title:** Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
 
-**Journal:** The Visual Computer
+**Journal:** **The Visual Computer**
 
 **BibTeX entry:**
 
