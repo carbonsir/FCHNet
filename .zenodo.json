@@ -1,5 +1,5 @@
 {
-  "title": "FCHNet: Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection",
+  "title": "Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection",
   "upload_type": "software",
   "description": "This release contains the official implementation of FCHNet, a Frequency-aware Cross-domain Hierarchical Network for lightweight camouflaged object detection. The software is associated with the manuscript \"Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection\", submitted to The Visual Computer. The repository includes the full source code, model implementation, training script, inference script, evaluation script, dependency requirements, dataset preparation instructions, key algorithm modules, experimental figures, trained weight links, prediction map links, and reproducibility instructions. The raw images of CAMO, COD10K, and NC4K are not redistributed due to dataset license restrictions; dataset organization and preparation instructions are provided in the repository.",
   "creators": [
