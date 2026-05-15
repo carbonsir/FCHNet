@@ -66,7 +66,7 @@ To improve transparency and reproducibility, this repository provides source cod
 |---|---|---|
 | FCHNet prediction maps | https://pan.baidu.com/s/1esOes8En-lfgAugIYQvs4A?pwd=wpe7 | wpe7 |
 | FCHNet trained weights | https://pan.baidu.com/s/1Iz02YaItxvPlpAuICyeblg?pwd=e4x4 | e4x4 |
-| Archived repository DOI | https://doi.org/10.5281/zenodo.20047495 | - |
+| Archived repository DOI | https://doi.org/10.5281/zenodo.20192879| - |
 
 Google Drive mirrors are also provided:
 
