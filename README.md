@@ -1,7 +1,7 @@
 # Frequency-Guided Cross-Domain Learning for Lightweight Camouflaged Object Detection
 
 [![Manuscript](https://img.shields.io/badge/Manuscript-Submitted%20to%20The%20Visual%20Computer-blue)](#paper-and-code-relationship)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20047495.svg)](https://doi.org/10.5281/zenodo.20047495)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20192879.svg)](https://doi.org/10.5281/zenodo.20192879)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey.svg)](#license)
 
 ## Recommended Citation
@@ -37,7 +37,7 @@ Camouflaged object detection (COD) faces challenges in preserving subtle structu
 This repository provides the full source code of the proposed FCHNet algorithm, including the model implementation, training script, inference script, evaluation script, dependency requirements, key algorithm modules, trained weights, and prediction maps.
 
 - **GitHub repository:** https://github.com/carbonsir/FCHNet
-- **Permanent archived DOI:** https://doi.org/10.5281/zenodo.20047495
+- **Permanent archived DOI:** https://doi.org/10.5281/zenodo.20192879
 - **Trained weights:** [Google Drive](https://drive.google.com/file/d/1wR6ukLUXvJ8hfVT5eq1mjOUVM7dLZSuv/view?usp=drive_link)
 - **Prediction maps:** [Google Drive](https://drive.google.com/file/d/1BsBFn1SP_b7-lmGgtcYH0jMr402GDekE/view?usp=drive_link)
 - **Dataset preparation instructions:** [`dataset/README.md`](dataset/README.md)
